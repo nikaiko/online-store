@@ -5,9 +5,6 @@ import { fetchOneDevice } from './../http/deviceAPI';
 
 function DevicePage() {
     const[device, setDevice] = useState({info: []})
-    console.log('====================================');
-    console.log(process.env.REACT_APP_API_URL + `${device.img}`);
-    console.log('====================================');
     const {id} = useParams()
 
     useEffect(() => {
